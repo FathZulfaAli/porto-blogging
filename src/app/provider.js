@@ -4,10 +4,10 @@
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
 
-export function Provider({ children }) {
+export default function Providers({ children }) {
   return (
     <CacheProvider>
-      <ChakraProvider>{children}</ChakraProvider>
+      <ChakraProvider>{children}</ChakraProvider>;
     </CacheProvider>
   );
 }
